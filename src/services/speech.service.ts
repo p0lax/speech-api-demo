@@ -1,9 +1,6 @@
 import { debounce } from "lodash";
 
-<<<<<<< HEAD
 const DEBOUNCE_TIMEOUT = 1000
-=======
->>>>>>> 376b85b73cf9738fb42d7d9f34f017984c5fca4c
 
 class SpeechAPI {
   selectedVoice?: SpeechSynthesisVoice; 
@@ -22,11 +19,7 @@ class SpeechAPI {
       utter.voice = this.selectedVoice;
     }
     this.synth.speak(utter);
-<<<<<<< HEAD
   }, DEBOUNCE_TIMEOUT)
-=======
-  }, 1000)
->>>>>>> 376b85b73cf9738fb42d7d9f34f017984c5fca4c
 
   setVoice(voice: SpeechSynthesisVoice) {
     this.selectedVoice = voice
